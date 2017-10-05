@@ -1,0 +1,89 @@
+[
+  {
+    "Id": 0,
+    "Flairtext": "Give it up!",
+    "Min": 0,
+    "Max": 0.129
+  },
+  {
+    "Id": 1,
+    "Flairtext": "You should see an optometrist.",
+    "Min": 0.130,
+    "Max": 0.139
+  },
+  {
+    "Id": 2,
+    "Flairtext": "Try swinging with your eyes open.",
+    "Min": 0.140,
+    "Max": 0.149
+  },
+  {
+    "Id": 3,
+    "Flairtext": "Those curve balls are hard to hit, aren't they?",
+    "Min": 0.150,
+    "Max": 0.159
+  },
+  {
+    "Id": 4,
+    "Flairtext": "Have you tried badminton?",
+    "Min": 0.160,
+    "Max": 0.169
+  },
+  {
+    "Id": 5,
+    "Flairtext": "Have you tried your hand at crochet?",
+    "Min": 0.170,
+    "Max": 0.179
+  },
+  {
+    "Id": 6,
+    "Flairtext": "Try taking more batting practice.",
+    "Min": 0.180,
+    "Max": 0.189
+  },
+  {
+    "Id": 7,
+    "Flairtext": "Have you packed your bags?",
+    "Min": 0.190,
+    "Max": 0.199
+  },
+
+  {
+    "Id": 8,
+    "Flairtext": "You're right at the Mendoza line.",
+    "Min": 0.200,
+    "Max": 0.200
+  },
+  {
+    "Id": 9,
+    "Flairtext": "You're heading to the minors.",
+    "Min": 0.201,
+    "Max": 0.239
+  },
+  {
+    "Id": 10,
+    "Flairtext": "I hope you've got a good glove.",
+    "Min": 0.240,
+    "Max": 0.259
+  },
+  {
+    "Id": 11,
+    "Flairtext": "Way to contribute teammate!",
+    "Min": 0.260,
+    "Max": 0.279
+
+  },
+  {
+    "Id": 12,
+    "FlairText": "You just might make the All-Star Team.",
+    "Min": 0.280,
+    "Max": 0.299
+  },
+
+  {
+    "Id": 13,
+    "Flairtext": "You're tearing the cover off the ball!",
+    "Min": 0.300,
+    "Max": 1
+  }
+]
