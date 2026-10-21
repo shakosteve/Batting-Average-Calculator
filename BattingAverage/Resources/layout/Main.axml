@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/HitsText"
-        android:inputType="phone" />
+        android:inputType="number" />
     <TextView
         android:text="How many at-bats?"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/AtBatsText"
-        android:inputType="phone"
+        android:inputType="number"
         android:text="300" />
     <Button
         android:text="Calculate Batting Average"

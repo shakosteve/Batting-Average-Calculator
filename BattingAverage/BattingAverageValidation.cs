@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BattingAverage
+﻿namespace BattingAverage
 {
     public class BattingAverageValidation
     {
@@ -11,14 +9,14 @@ namespace BattingAverage
 
         public BattingAverageValidation(string hits, string atbats)
         {
-            double safeHits;
-            double safeAtbats;
+            int parsedHits;
+            int parsedAtbats;
 
-            safeHits = double.TryParse(hits, out safeHits) ? safeHits : 0;
-            safeAtbats = double.TryParse(atbats, out safeAtbats) ? safeAtbats : MinimumAtBats;
+            double safeHits = int.TryParse(hits, out parsedHits) ? parsedHits : 0;
+            double safeAtbats = int.TryParse(atbats, out parsedAtbats) ? parsedAtbats : MinimumAtBats;
 
+            safeAtbats = safeAtbats < 1 ? MinimumAtBats : safeAtbats;
             safeHits = safeHits > safeAtbats || safeHits < 1 ? 0 : safeHits;
-            safeAtbats = Math.Abs(safeAtbats) < 1 ? MinimumAtBats : safeAtbats;
 
             Hits = safeHits;
             AtBats = safeAtbats;

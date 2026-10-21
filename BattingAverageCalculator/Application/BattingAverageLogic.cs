@@ -1,4 +1,5 @@
-﻿using BattingAverageCalculator.Classes;
+﻿using System;
+using BattingAverageCalculator.Classes;
 using BattingAverageCalculator.Data;
 
 namespace BattingAverageCalculator.Application
@@ -11,7 +12,8 @@ namespace BattingAverageCalculator.Application
             var battingAverageDataAccess = new BattingAverageDataAccess();
             AtBats = atbats;
             Hits = hits;
-            Flair = battingAverageDataAccess.GetFlair(CalculatedAverage);
+            // Round to match the displayed average so values between the flair ranges still match one
+            Flair = battingAverageDataAccess.GetFlair(Math.Round(CalculatedAverage, 3, MidpointRounding.AwayFromZero));
         }
 
 
