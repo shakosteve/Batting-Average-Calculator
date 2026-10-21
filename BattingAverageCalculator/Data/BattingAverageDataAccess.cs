@@ -10,7 +10,7 @@ namespace BattingAverageCalculator.Data
     {
         public List<Flair> Flair = JsonConvert.DeserializeObject<List<Flair>>(Resources.BattingAverageFlair);
 
-        public string GetFlair(double averge) => Flair.First(m => averge <= m.Max && averge >= m.Min).Flairtext;
+        public string GetFlair(double average) => Flair.First(m => average <= m.Max && average >= m.Min).Flairtext;
 
 
     }

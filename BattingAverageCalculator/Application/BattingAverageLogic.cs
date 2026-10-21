@@ -11,7 +11,7 @@ namespace BattingAverageCalculator.Application
             var battingAverageDataAccess = new BattingAverageDataAccess();
             AtBats = atbats;
             Hits = hits;
-            Flair = battingAverageDataAccess.GetFlair(CalculatedAverge);
+            Flair = battingAverageDataAccess.GetFlair(CalculatedAverage);
         }
 
 

@@ -75,7 +75,7 @@
   },
   {
     "Id": 12,
-    "FlairText": "You just might make the All-Star Team.",
+    "Flairtext": "You just might make the All-Star Team.",
     "Min": 0.280,
     "Max": 0.299
   },

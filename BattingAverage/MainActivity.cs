@@ -27,14 +27,14 @@ namespace BattingAverage
             calcAverage.Click += (sender, args) =>
             {
                 var battingAverageValidation = new BattingAverageValidation(hits.Text,atBats.Text);
-                var battingAvergeLogic = new BattingAverageLogic(battingAverageValidation.Hits, battingAverageValidation.AtBats);
+                var battingAverageLogic = new BattingAverageLogic(battingAverageValidation.Hits, battingAverageValidation.AtBats);
 
                 hits.Text = battingAverageValidation.Hits.ToString(CultureInfo.CurrentCulture);
                 atBats.Text = battingAverageValidation.AtBats.ToString(CultureInfo.CurrentCulture);
 
                 player.Start();
-                battingAverage.Text = $"Your batting average is: {battingAvergeLogic.Average}";
-                flair.Text = battingAvergeLogic.Flair;
+                battingAverage.Text = $"Your batting average is: {battingAverageLogic.Average}";
+                flair.Text = battingAverageLogic.Flair;
             };
         }
     }
