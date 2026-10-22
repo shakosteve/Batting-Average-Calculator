@@ -7,6 +7,7 @@
         public string Average => $"{Hits / AtBats:.000}";
         public double CalculatedAverage => Hits / AtBats;
         public string Flair { get; set; }
+        public CrowdReaction Reaction { get; set; }
     }
     
 }
