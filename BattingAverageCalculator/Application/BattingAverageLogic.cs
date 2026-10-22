@@ -7,9 +7,8 @@ namespace BattingAverageCalculator.Application
     
     public class BattingAverageLogic : BattingAverage
     {
-        public BattingAverageLogic(double hits, double atbats)
+        public BattingAverageLogic(double hits, double atbats, BattingAverageDataAccess battingAverageDataAccess)
         {
-            var battingAverageDataAccess = new BattingAverageDataAccess();
             AtBats = atbats;
             Hits = hits;
             // Round to match the displayed average so values between the flair ranges still match one

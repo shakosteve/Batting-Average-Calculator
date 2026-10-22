@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="grass_dark">#FF1B5E20</color>
+  <color name="grass">#FF388E3C</color>
+  <color name="dirt">#FFC1915F</color>
+  <color name="chalk">#FFFFFFFF</color>
+  <color name="scoreboard">#FF0F1F12</color>
+  <color name="scoreboard_lights">#FFFFD54F</color>
+</resources>

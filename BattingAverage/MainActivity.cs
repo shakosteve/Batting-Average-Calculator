@@ -4,10 +4,11 @@ using Android.Media;
 using Android.Widget;
 using Android.OS;
 using BattingAverageCalculator.Application;
+using BattingAverageCalculator.Data;
 
 namespace BattingAverage
 {
-    [Activity(Label = "Batting Average Calculator", MainLauncher = true)]
+    [Activity(Label = "Batting Average Calculator", MainLauncher = true, Exported = true)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -24,16 +25,19 @@ namespace BattingAverage
             var flair = FindViewById<TextView>(Resource.Id.FlairText);
             var player = MediaPlayer.Create(this, Resource.Raw.BallHitCheer);
 
+            // Load the flair once at launch rather than on every calculation
+            var battingAverageDataAccess = new BattingAverageDataAccess();
+
             calcAverage.Click += (sender, args) =>
             {
                 var battingAverageValidation = new BattingAverageValidation(hits.Text,atBats.Text);
-                var battingAverageLogic = new BattingAverageLogic(battingAverageValidation.Hits, battingAverageValidation.AtBats);
+                var battingAverageLogic = new BattingAverageLogic(battingAverageValidation.Hits, battingAverageValidation.AtBats, battingAverageDataAccess);
 
                 hits.Text = battingAverageValidation.Hits.ToString(CultureInfo.CurrentCulture);
                 atBats.Text = battingAverageValidation.AtBats.ToString(CultureInfo.CurrentCulture);
 
                 player.Start();
-                battingAverage.Text = $"Your batting average is: {battingAverageLogic.Average}";
+                battingAverage.Text = battingAverageLogic.Average;
                 flair.Text = battingAverageLogic.Flair;
             };
         }

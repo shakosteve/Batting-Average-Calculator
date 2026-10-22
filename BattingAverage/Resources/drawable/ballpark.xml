@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Classic ballpark seen from behind home plate: outfield grass, warning track, skinned infield, base paths and bases -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+
+    <!-- Foul territory -->
+    <path
+        android:fillColor="#FF1B5E20"
+        android:pathData="M0,0 H400 V300 H0 Z" />
+
+    <!-- Warning track -->
+    <path
+        android:fillColor="#FFB5835A"
+        android:pathData="M200,280 L10,90 A269,269 0 0,1 390,90 Z" />
+
+    <!-- Outfield grass -->
+    <path
+        android:fillColor="#FF388E3C"
+        android:pathData="M200,280 L22,102 A252,252 0 0,1 378,102 Z" />
+
+    <!-- Mowing stripes, clipped to the outfield grass -->
+    <group>
+        <clip-path android:pathData="M200,280 L22,102 A252,252 0 0,1 378,102 Z" />
+        <path
+            android:fillColor="#14FFFFFF"
+            android:pathData="M0,260 L200,60 L400,260 V240 L200,40 L0,240 Z" />
+        <path
+            android:fillColor="#14FFFFFF"
+            android:pathData="M0,300 L200,100 L400,300 V280 L200,80 L0,280 Z" />
+    </group>
+
+    <!-- Infield dirt -->
+    <path
+        android:fillColor="#FFC1915F"
+        android:pathData="M200,280 L108,188 A93.5,93.5 0 1,1 292,188 Z" />
+
+    <!-- Infield grass -->
+    <path
+        android:fillColor="#FF43A047"
+        android:pathData="M200,262 L272,190 L200,118 L128,190 Z" />
+
+    <!-- Pitcher's mound and rubber -->
+    <path
+        android:fillColor="#FFC1915F"
+        android:pathData="M188,194.5 A12,12 0 1,0 212,194.5 A12,12 0 1,0 188,194.5 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M196,193.5 H204 V195.5 H196 Z" />
+
+    <!-- Home plate circle -->
+    <path
+        android:fillColor="#FFC1915F"
+        android:pathData="M184,280 A16,16 0 1,0 216,280 A16,16 0 1,0 184,280 Z" />
+
+    <!-- Foul lines -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M200,280 L10,90 M200,280 L390,90" />
+
+    <!-- Batter's boxes -->
+    <path
+        android:strokeColor="#CCFFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M186,274 H193 V287 H186 Z M207,274 H214 V287 H207 Z" />
+
+    <!-- First, second and third base -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M290,183 L297,190 L290,197 L283,190 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M200,93 L207,100 L200,107 L193,100 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M110,183 L117,190 L110,197 L103,190 Z" />
+
+    <!-- Home plate -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M195,276 H205 V281 L200,286 L195,281 Z" />
+</vector>

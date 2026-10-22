@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grass_dark">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ballpark"
+            android:contentDescription="@string/app_name" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <TextView
+                android:text="How many hits?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/chalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/HitsText"
+                android:inputType="number"
+                android:textColor="@color/chalk"
+                android:backgroundTint="@color/chalk" />
+            <TextView
+                android:text="How many at-bats?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/chalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/textView2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AtBatsText"
+                android:inputType="number"
+                android:textColor="@color/chalk"
+                android:backgroundTint="@color/chalk"
+                android:text="300" />
+            <Button
+                android:text="Calculate Batting Average"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/dirt"
+                android:textColor="@color/chalk"
+                android:textStyle="bold"
+                android:id="@+id/CalculateBattingAverageButton" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="@drawable/scoreboard">
+                <TextView
+                    android:text="BATTING AVERAGE"
+                    android:textSize="14sp"
+                    android:textColor="@color/chalk"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.15"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="---"
+                    android:textSize="56sp"
+                    android:textColor="@color/scoreboard_lights"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BattingAverageText" />
+                <TextView
+                    android:text="Batter up!"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/chalk"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/FlairText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
