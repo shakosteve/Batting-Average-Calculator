@@ -50,7 +50,7 @@
                 android:inputType="number"
                 android:textColor="@color/chalk"
                 android:backgroundTint="@color/chalk"
-                android:text="300" />
+                android:text="550" />
             <Button
                 android:text="Calculate Batting Average"
                 android:layout_width="match_parent"
